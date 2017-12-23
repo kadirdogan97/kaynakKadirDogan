@@ -1,0 +1,35 @@
+<!--
+  Generated template for the NotDetayPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{note?.notKonu}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+      <ion-list>
+        <ion-item>
+          <h2>Notu Ekleyen : {{ note?.notSahip }}</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Ders : {{ note?.notDers }}</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Konu : {{ note?.notKonu }}</h2>
+        </ion-item>
+        <ion-item>
+          <h2>İçerik : {{ note?.notIcerik }}</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Kaynak Adresi : {{ note?.notKaynak }}</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Eklendiği Tarih : {{ note?.notTarih }}</h2>
+        </ion-item>
+      </ion-list>
+      <button ion-button (click)="updateData()">Güncelle</button><button ion-button (click)="delDatas()">Sil</button>
+</ion-content>

@@ -1,0 +1,46 @@
+<!--
+  Generated template for the NotEklePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon> 
+      </button>
+      <ion-title>
+        NotEkle
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label color="primary">Ad Soyad:</ion-label>
+        <ion-input [(ngModel)]="notSahip" placeholder="Text Input"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary">Ders:</ion-label>
+          <ion-input [(ngModel)]="notDers" placeholder="Text Input"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary">Konu:</ion-label>
+          <ion-input [(ngModel)]="notKonu" placeholder="Text Input"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary">Not İçerik:</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-input [(ngModel)]="notIcerik" placeholder="Clear Input" clearInput></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary">URL</ion-label>
+          <ion-input [(ngModel)]="notKaynak" placeholder="Text Input"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button color="primary" full (click)="ekleFonk()">EKLE</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
